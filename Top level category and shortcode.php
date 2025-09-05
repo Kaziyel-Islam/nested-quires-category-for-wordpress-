@@ -1,5 +1,6 @@
 // Nested Categories
 
+<?php
 
 function kaz_nested_categories_shortcode( $atts ) {
     $atts = shortcode_atts( array(
@@ -34,3 +35,5 @@ function kaz_nested_categories_shortcode( $atts ) {
     return ob_get_clean();
 }
 add_shortcode( 'nested_categories', 'kaz_nested_categories_shortcode' );
+
+?>
